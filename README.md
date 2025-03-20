@@ -1,5 +1,5 @@
 # project2
-## Стек: PHP, MySQL/PostgreSQL, HTML/CSS, JavaScript.
+## Стек: PHP, MySQL, HTML, CSS, JavaScript.
 
 Структура репозитория:
 
