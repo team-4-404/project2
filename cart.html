@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Dreams</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <!-- Логотип -->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo.jpg" alt="Sweet Dreams">
+                    <span>Sweet dreams</span>
+                </a>
+            </div>
+    
+            <!-- Навигация -->
+            <nav class="nav">
+                <ul>
+                    <li><a href="about.php">О компании</a></li>
+                    <li><a href="tovars.php">Каталог</a></li>
+                </ul>
+            </nav>
+    
+            <!-- Поиск -->
+            <div class="search-box">
+                <input type="text" placeholder="Введите категорию или товар">
+                <button type="submit">🔍</button>
+            </div>
+    
+            <!-- Иконки пользователя и корзины -->
+            <div class="icons">
+                <a href="profile.php">
+                    <img src="img/user.png" alt="Личный кабинет">
+                </a>
+                <a href="cart.html" class="cart">
+                    <img src="img/korzina.png" alt="Корзина">
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="cart-page">
+        <div class="containerr">
+                <div class="cart-items" id="cart-items">
+                <!-- Товары будут загружаться сюда через JS -->
+                
+                </div>
+            
+                <div class="cart-summary">
+                    <h2>Итого</h2>
+                    <div class="summary-row">
+                        <span>Товары</span>
+                        <span id="total-items">0</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Сумма</span>
+                        <span id="total-price">0 ₽</span>
+                    </div>
+                    <button class="btn-primary" id="checkout-btn">Оформить заказ</button>
+                </div>
+        </div>
+    </main>
+</body>
+</html>

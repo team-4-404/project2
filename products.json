@@ -1,0 +1,290 @@
+[
+    {
+        "id": "1",
+        "name": "Детский комплект \"Совушки\"",
+        "article": "0000000001",
+        "price": "4000 ₽",
+        "color": "#6fc7ff",
+        "inStock": true,
+        "image": "img/product1.png",
+        "addedDate": "2025-03-05",
+        "size": "120x150",
+        "rating": "4.9",
+        "description": "Детский комплект \"Совушки\" создан для того, чтобы ваш ребенок чувствовал себя уютно и комфортно.",
+        "specs": [
+            "Пододеяльник: 100x100 см, 1 шт.",
+            "Простыня: 100x100 см, 1 шт.",
+            "Наволочка: 100x100 см, 1 шт."
+        ],
+        "images": [
+            "img/product1.png",
+            "img/product1.png",
+            "img/product1.png",
+            "img/product1.png"
+        ]
+    },
+    {
+        "id": "2",
+        "name": "Комплект \"Лесные мотивы\"",
+        "article": "0000000002",
+        "price": "3500 ₽",
+        "color": "#8b4513",
+        "addedDate": "2025-03-20",
+        "inStock": true,
+        "image": "img/product2.png",
+        "size": "1 СП",
+        "rating": "4.7",
+        "description": "Комплект \"Лесные мотивы\" создан для любителей природы и уюта.",
+        "specs": [
+            "Пододеяльник: 150x200 см, 1 шт.",
+            "Простыня: 200x220 см, 1 шт.",
+            "Наволочка: 50x70 см, 2 шт."
+        ],
+        "images": [
+            "img/product2.png",
+            "img/product2.png",
+            "img/product2.png",
+            "img/product2.png"
+        ]
+    },
+    {
+        "id": "3",
+        "name": "Комплект \"Розовый рай\"",
+        "article": "0000000003",
+        "price": "5000 ₽",
+        "color": "#e5c29f",
+        "addedDate": "2025-03-23",
+        "inStock": true,
+        "image": "img/product3.png",
+        "size": "2 СП",
+        "rating": "4.8",
+        "description": "Комплект \"Розовый рай\" создан для тех, кто любит нежные и романтичные оттенки.",
+        "specs": [
+            "Пододеяльник: 160x210 см, 1 шт.",
+            "Простыня: 240x260 см, 1 шт.",
+            "Наволочка: 50x70 см, 2 шт."
+        ],
+        "images": [
+            "img/product3.png",
+            "img/product3.png",
+            "img/product3.png",
+            "img/product3.png"
+        ]
+    },
+    {
+        "id": "4",
+        "name": "Комплект \"Зимняя сказка\"",
+        "article": "0000000004",
+        "price": "6000 ₽",
+        "color": "#000000",
+        "addedDate": "2025-02-05",
+        "inStock": true,
+        "image": "img/product4.png",
+        "size": "ЕВРО",
+        "rating": "4.6",
+        "description": "Комплект \"Зимняя сказка\" создан для тех, кто любит уют и тепло зимних вечеров.",
+        "specs": [
+            "Пододеяльник: 175x210 см, 1 шт.",
+            "Простыня: 240x240 см, 1 шт.",
+            "Наволочка: 50x70 см, 2 шт."
+        ],
+        "images": [
+            "img/product4.png",
+            "img/product4.png",
+            "img/product4.png",
+            "img/product4.png"
+        ]
+    },
+    {
+        "id": "5",
+        "name": "Комплект \"Морские волны\"",
+        "article": "0000000005",
+        "price": "4200 ₽",
+        "color": "#ffffff",
+        "inStock": true,
+        "image": "img/product5.png",
+        "addedDate": "2025-01-15",
+        "size": "1,5 СП",
+        "rating": "4.5",
+        "description": "Комплект \"Морские волны\" создан для тех, кто мечтает о море и приключениях.",
+        "specs": [
+            "Пододеяльник: 150x200 см, 1 шт.",
+            "Простыня: 200x220 см, 1 шт.",
+            "Наволочка: 50x70 см, 2 шт."
+        ],
+        "images": [
+            "img/product5.png",
+            "img/product5.png",
+            "img/product5.png",
+            "img/product5.png"
+        ]
+    },
+    {
+        "id": "6",
+        "name": "Комплект \"Осенний Тигр\"",
+        "article": "0000000006",
+        "price": "4500 ₽",
+        "color": "#8b4513",
+        "addedDate": "2023-10-15",
+        "inStock": true,
+        "image": "img/product6.png",
+        "size": "120x150",
+        "rating": "4.4",
+        "description": "Комплект \"Осенний Тигр\" создан для тех, кто ценит яркие и насыщенные цвета осени.",
+        "specs": [
+            "Пододеяльник: 160x210 см, 1 шт.",
+            "Простыня: 240x260 см, 1 шт.",
+            "Наволочка: 50x70 см, 2 шт."
+        ],
+        "images": [
+            "img/product6.png",
+            "img/product6.png",
+            "img/product6.png",
+            "img/product6.png"
+        ]
+    },
+    {
+        "id": "7",
+        "name": "Комплект \"Звездная ночь\"",
+        "article": "0000000007",
+        "price": "4700 ₽",
+        "color": "#6fc7ff",
+        "addedDate": "2024-12-15",
+        "inStock": true,
+        "image": "img/product7.png",
+        "size": "1,5 СП",
+        "rating": "4.8",
+        "description": "Комплект с принтом звездного неба создаст атмосферу уюта и романтики в вашей спальне.",
+        "specs": [
+            "Пододеяльник: 150x200 см, 1 шт.",
+            "Простыня: 200x220 см, 1 шт.",
+            "Наволочка: 50x70 см, 2 шт."
+        ],
+        "images": [
+            "img/product7.png",
+            "img/product7_1.png",
+            "img/product7_2.png",
+            "img/product7_3.png"
+        ]
+    },
+    {
+        "id": "8",
+        "name": "Детский комплект \"Динозаврики\"",
+        "article": "0000000008",
+        "price": "3800 ₽",
+        "color": "#6fc7ff",
+        "addedDate": "2024-03-15",
+        "inStock": true,
+        "image": "img/product8.png",
+        "size": "120x150",
+        "rating": "4.9",
+        "description": "Яркий комплект с веселыми динозаврами порадует вашего ребенка и сделает сны интереснее.",
+        "specs": [
+            "Пододеяльник: 100x100 см, 1 шт.",
+            "Простыня: 100x100 см, 1 шт.",
+            "Наволочка: 100x100 см, 1 шт."
+        ],
+        "images": [
+            "img/product8.png",
+            "img/product8_1.png",
+            "img/product8_2.png",
+            "img/product8_3.png"
+        ]
+    },
+    {
+        "id": "9",
+        "name": "Комплект \"Лавандовые поля\"",
+        "article": "0000000009",
+        "price": "5200 ₽",
+        "color": "#6fc7ff",
+        "addedDate": "2025-03-20",
+        "inStock": true,
+        "image": "img/product9.png",
+        "size": "2 СП",
+        "rating": "4.7",
+        "description": "Нежный лавандовый принт создаст атмосферу Прованса в вашей спальне.",
+        "specs": [
+            "Пододеяльник: 160x210 см, 1 шт.",
+            "Простыня: 240x260 см, 1 шт.",
+            "Наволочка: 50x70 см, 2 шт."
+        ],
+        "images": [
+            "img/product9.png",
+            "img/product9_1.png",
+            "img/product9_2.png",
+            "img/product9_3.png"
+        ]
+    },
+    {
+        "id": "10",
+        "name": "Комплект \"Городские огни\"",
+        "article": "0000000010",
+        "price": "5500 ₽",
+        "color": "#6fc7ff",
+        "addedDate": "2025-03-05",
+        "inStock": true,
+        "image": "img/product10.png",
+        "size": "ЕВРО",
+        "rating": "4.6",
+        "description": "Стильный комплект с силуэтами ночного города для современных интерьеров.",
+        "specs": [
+            "Пододеяльник: 175x210 см, 1 шт.",
+            "Простыня: 240x240 см, 1 шт.",
+            "Наволочка: 50x70 см, 2 шт."
+        ],
+        "images": [
+            "img/product10.png",
+            "img/product10_1.png",
+            "img/product10_2.png",
+            "img/product10_3.png"
+        ]
+    },
+    {
+        "id": "11",
+        "name": "Комплект \"Тропический рай\"",
+        "article": "0000000011",
+        "price": "4800 ₽",
+        "addedDate": "2025-02-15",
+        "color": "#6fc7ff",
+        "inStock": false,
+        "image": "img/product11.png",
+        "size": "1 СП",
+        "rating": "4.5",
+        "description": "Яркие тропические листья создадут летнее настроение в любое время года.",
+        "specs": [
+            "Пододеяльник: 150x200 см, 1 шт.",
+            "Простыня: 200x220 см, 1 шт.",
+            "Наволочка: 50x70 см, 2 шт."
+        ],
+        "images": [
+            "img/product11.png",
+            "img/product11_1.png",
+            "img/product11_2.png",
+            "img/product11_3.png"
+        ]
+    },
+    {
+        "id": "12",
+        "name": "Комплект \"Минимализм\"",
+        "article": "0000000012",
+        "price": "4300 ₽",
+        "color": "#6fc7ff",
+        "inStock": false,
+        "addedDate": "2025-03-15",
+        "image": "img/product12.png",
+        "size": "1,5 СП",
+        "rating": "4.8",
+        "description": "Сдержанный дизайн в серых тонах идеально впишется в современный интерьер.",
+        "specs": [
+            "Пододеяльник: 150x200 см, 1 шт.",
+            "Простыня: 200x220 см, 1 шт.",
+            "Наволочка: 50x70 см, 2 шт."
+        ],
+        "images": [
+            "img/product12.png",
+            "img/product12_1.png",
+            "img/product12_2.png",
+            "img/product12_3.png"
+        ]
+    }
+]
