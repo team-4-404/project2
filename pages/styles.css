@@ -1,0 +1,433 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #6b5b95;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 8px;
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav ul li {
+    margin-right: 20px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.nav ul li a:hover {
+    color: #ff7f50;
+}
+
+.search-box {
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.search-box input {
+    border: none;
+    padding: 8px 12px;
+    outline: none;
+    width: 400px;
+}
+
+.search-box button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px 12px;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.icons a {
+    margin-left: 15px;
+}
+
+.icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.cart {
+    position: relative;
+}
+
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background: #ff7f50;
+    color: white;
+    font-size: 12px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Стили для страницы товара */
+.product-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.back-to-catalog {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #6b5b95;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.product-content {
+    display: flex;
+    gap: 20px;
+}
+
+.product-info {
+    flex: 1;
+}
+
+.product-images {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main-image img {
+    width: 100%;
+    height: auto;
+}
+
+.small-images {
+    display: flex;
+    gap: 10px;
+}
+
+.small-images img {
+    width: 30%;
+    height: auto;
+}
+
+.product-meta {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.buy-button {
+    background: #ff7f50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.buy-button:hover {
+    background: #e6693c;
+}
+
+.product-specs ul {
+    list-style: none;
+    padding: 0;
+}
+
+.product-specs li {
+    margin-bottom: 10px;
+}
+
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.tab-button {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    transition: 0.3s;
+}
+
+.tab-button.active {
+    background: #333;
+    color: white;
+}
+
+.tab-content {
+    margin-top: 20px;
+}
+
+.reviews-list {
+    margin-bottom: 20px;
+}
+
+.review {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+#review-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#review-form input, #review-form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#review-form button {
+    background: #ff7f50;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#review-form button:hover {
+    background: #e6693c;
+}
+/* Стили для страницы товара */
+.product-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.back-to-catalog {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #6b5b95;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.product-content {
+    display: flex;
+    gap: 20px;
+}
+
+.product-info {
+    flex: 1;
+}
+
+.product-images {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрирование картинок */
+    gap: 10px;
+}
+
+.main-image img {
+    width: 100%;
+    height: auto;
+}
+
+.small-images {
+    display: flex;
+    gap: 10px;
+    justify-content: center; /* Центрирование маленьких картинок */
+}
+
+.small-images img {
+    width: 30%;
+    height: auto;
+}
+
+.product-meta {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.buy-button {
+    background: #ff7f50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.buy-button:hover {
+    background: #e6693c;
+}
+
+.product-specs ul {
+    list-style: none;
+    padding: 0;
+}
+
+.product-specs li {
+    margin-bottom: 10px;
+}
+
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.tab-button {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    transition: 0.3s;
+}
+
+.tab-button.active {
+    background: #333;
+    color: white;
+}
+
+.tab-content {
+    margin-top: 20px;
+}
+
+.reviews-list {
+    margin-bottom: 20px;
+}
+
+.review {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+#review-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#review-form input, #review-form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#review-form button {
+    background: #ff7f50;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#review-form button:hover {
+    background: #e6693c;
+}
+
+/* Стили для модального окна */
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed;
+    z-index: 1000;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9); /* Полупрозрачный черный фон */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}

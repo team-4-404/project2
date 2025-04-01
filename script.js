@@ -731,3 +731,109 @@ document.addEventListener("DOMContentLoaded", function() {
     // Запуск приложения
     init();
 });
+
+// Функция для загрузки товаров
+async function loadProducts(category = null, sort = 'popular', filters = {}) {
+    try {
+        const queryParams = new URLSearchParams({
+            ajax: true,
+            category: category || '',
+            sort: sort,
+            ...filters
+        });
+
+        const response = await fetch(`products.php?${queryParams}`);
+        const products = await response.json();
+        
+        const productList = document.getElementById('product-list');
+        if (!productList) return;
+
+        productList.innerHTML = products.map(product => `
+            <div class="product-card">
+                <img src="${product.image}" alt="${product.name}">
+                <h3>${product.name}</h3>
+                <p class="price">${product.price} ₽</p>
+                <p class="size">Размер: ${product.size}</p>
+                ${product.in_stock 
+                    ? `<button class="add-to-cart" data-id="${product.id}">В корзину</button>`
+                    : `<button class="out-of-stock" disabled>Нет в наличии</button>`
+                }
+            </div>
+        `).join('');
+
+        // Обработчики для кнопок "В корзину"
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', () => addToCart(button.dataset.id));
+        });
+
+    } catch (error) {
+        console.error('Ошибка при загрузке товаров:', error);
+    }
+}
+
+// Функция для добавления в корзину
+function addToCart(productId) {
+    let cart = JSON.parse(localStorage.getItem('cart') || '{}');
+    cart[productId] = (cart[productId] || 0) + 1;
+    localStorage.setItem('cart', JSON.stringify(cart));
+    updateCartCount();
+}
+
+// Функция обновления счетчика корзины
+function updateCartCount() {
+    const cart = JSON.parse(localStorage.getItem('cart') || '{}');
+    const count = Object.values(cart).reduce((sum, count) => sum + count, 0);
+    document.querySelector('.cart-count').textContent = count;
+}
+
+// Инициализация при загрузке страницы
+document.addEventListener('DOMContentLoaded', () => {
+    updateCartCount();
+
+    // Обработчик изменения категории
+    const tabs = document.querySelectorAll('.tab');
+    if (tabs.length) {
+        tabs.forEach(tab => {
+            tab.addEventListener('click', (e) => {
+                e.preventDefault();
+                tabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+                loadProducts(tab.getAttribute('onclick').match(/'(.+?)'/)[1]);
+            });
+        });
+    }
+
+    // Обработчик сортировки
+    const sortSelect = document.getElementById('sort-select');
+    if (sortSelect) {
+        sortSelect.addEventListener('change', () => {
+            const activeTab = document.querySelector('.tab.active');
+            const category = activeTab ? activeTab.getAttribute('onclick').match(/'(.+?)'/)[1] : null;
+            loadProducts(category, sortSelect.value);
+        });
+    }
+
+    // Обработчик фильтров
+    const filterForm = document.getElementById('filter-form');
+    if (filterForm) {
+        filterForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const formData = new FormData(filterForm);
+            const filters = {
+                price_min: formData.get('price_min'),
+                price_max: formData.get('price_max'),
+                size: formData.get('size'),
+                color: formData.get('color'),
+                in_stock: formData.get('in_stock') === 'on'
+            };
+            const activeTab = document.querySelector('.tab.active');
+            const category = activeTab ? activeTab.getAttribute('onclick').match(/'(.+?)'/)[1] : null;
+            loadProducts(category, sortSelect.value, filters);
+        });
+    }
+
+    // Загрузка товаров при первом открытии страницы
+    if (document.getElementById('product-list')) {
+        loadProducts();
+    }
+});

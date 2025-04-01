@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Детский комплект "Совушки"</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="logo">
+            <a href="../index.php">
+                <img src="../img/logo.jpg" alt="Sweet Dreams">
+                <span>Sweet dreams</span>
+            </a>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="../about.php">О компании</a></li>
+                <li><a href="../catalog.php">Каталог</a></li>
+            </ul>
+        </nav>
+        <div class="search-box">
+            <input type="text" placeholder="Введите категорию или товар">
+            <button type="submit">🔍</button>
+        </div>
+        <div class="icons">
+            <a href="../profile.php">
+                <img src="../img/user.png" alt="Личный кабинет">
+            </a>
+            <a href="../cart.php" class="cart">
+                <img src="../img/korzina.png" alt="Корзина">
+                <span class="cart-count">0</span>
+            </a>
+        </div>
+    </div>
+</header>
+
+<div class="product-container">
+    <a href="../tovars.php" class="back-to-catalog">Назад в каталог</a>
+
+    <div class="product-content">
+        <!-- Правая часть (теперь слева) -->
+        <div class="product-images">
+            <div class="main-image">
+                <img src="../img/product1.png" alt="Детский комплект Совушки">
+            </div>
+            <div class="small-images">
+                <img src="../img/product1.png" alt="Детский комплект Совушки">
+                <img src="../img/product1.png" alt="Детский комплект Совушки">
+                <img src="../img/product1.png" alt="Детский комплект Совушки">
+            </div>
+        </div>
+
+        <!-- Левая часть (теперь справа) -->
+        <div class="product-info">
+            <h1>Детский комплект "Совушки"</h1>
+            <div class="product-meta">
+                <p>Артикул: 0000000000</p>
+                <p class="rating">Рейтинг: <span id="product-rating">0.0</span></p>
+            </div>
+            <div class="product-price">
+                <p>Цена: 4000 ₽</p>
+                <button class="buy-button">Купить</button>
+            </div>
+            <div class="product-specs">
+                <h3>Комплектация</h3>
+                <ul>
+                    <li>Пододеяльник: 100x100 см, 1 шт.</li>
+                    <li>Простыня: 100x100 см, 1 шт.</li>
+                    <li>Наволочка: 100x100 см, 2 шт.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Кнопки для переключения между описанием и отзывами -->
+    <div class="tabs">
+        <button class="tab-button active" data-tab="description">Описание</button>
+        <button class="tab-button" data-tab="reviews">Отзывы</button>
+    </div>
+
+    <!-- Описание товара -->
+    <div class="tab-content" id="description">
+        <h2>Описание</h2>
+        <p>Данный комплект создан для того, чтобы ваш ребенок чувствовал себя уютно и комфортно. Изготовлен из высококачественного хлопка, который обеспечивает мягкость и гипоаллергенность. Комплект включает пододеяльник, простыню и две наволочки.</p>
+    </div>
+
+    <!-- Отзывы -->
+    <div class="tab-content" id="reviews" style="display: none;">
+        <h2>Отзывы</h2>
+        <div class="reviews-list" id="reviews-list">
+            <!-- Отзывы будут загружаться здесь -->
+        </div>
+
+        <!-- Форма для добавления отзыва -->
+        <form id="review-form">
+            <h3>Оставить отзыв</h3>
+            <input type="text" id="review-name" placeholder="Ваше имя" required>
+            <textarea id="review-text" placeholder="Ваш отзыв" required></textarea>
+            <input type="number" id="review-rating" placeholder="Оценка (1-5)" min="1" max="5" required>
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
