@@ -2,7 +2,7 @@
 <header class="header">
     <div class="container">
         <div class="logo">
-            <a href="index.php">
+            <a href="index.html">
                 <img src="img/logo.jpg" alt="Sweet Dreams">
                 Sweet Dreams
             </a>
@@ -20,7 +20,7 @@
         <div class="icons">
             <?php
             session_start();
-            if (isset($_SESSION['user_id'])) {
+            if (isset($_SESSION['user_email'])) {
                 echo '<a href="profile.php">
                     <img src="img/user.png" alt="Личный кабинет">
                 </a>';

@@ -3,7 +3,7 @@ session_start();
 require_once 'config/db.php';
 
 // Проверка авторизации
-if (!isset($_SESSION['user_id'])) {
+if (!isset($_SESSION['user_email'])) {
     header('Location: login.php');
     exit();
 }
@@ -13,8 +13,8 @@ $error_message = '';
 
 // Получение данных пользователя
 try {
-    $stmt = $pdo->prepare("SELECT * FROM users WHERE id = ?");
-    $stmt->execute([$_SESSION['user_id']]);
+    $stmt = $pdo->prepare("SELECT * FROM users WHERE email = ?");
+    $stmt->execute([$_SESSION['user_email']]);
     $user = $stmt->fetch();
 } catch(PDOException $e) {
     $error_message = 'Ошибка при получении данных пользователя';
@@ -36,8 +36,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['change_password'])) {
     } else {
         try {
             $hashed_password = password_hash($new_password, PASSWORD_DEFAULT);
-            $stmt = $pdo->prepare("UPDATE users SET password = ? WHERE id = ?");
-            $stmt->execute([$hashed_password, $_SESSION['user_id']]);
+            $stmt = $pdo->prepare("UPDATE users SET password = ? WHERE email = ?");
+            $stmt->execute([$hashed_password, $_SESSION['user_email']]);
             $success_message = 'Пароль успешно изменен';
         } catch(PDOException $e) {
             $error_message = 'Ошибка при изменении пароля';
@@ -78,7 +78,6 @@ if (isset($_GET['logout'])) {
 
             <div class="profile-info">
                 <p><strong>Email:</strong> <?php echo htmlspecialchars($user['email']); ?></p>
-                <p><strong>Дата регистрации:</strong> <?php echo date('d.m.Y', strtotime($user['created_at'])); ?></p>
             </div>
 
             <div class="profile-section">

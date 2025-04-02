@@ -283,6 +283,39 @@ select {
     cursor: pointer;
 }
 
+/* Стили для чекбоксов */
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    margin-right: 8px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #FFA53C;
+    border-color: #FFA53C;
+}
+
+input[type="checkbox"]:checked::after {
+    content: "✓";
+    position: absolute;
+    color: white;
+    font-size: 14px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input[type="checkbox"]:hover {
+    border-color: #FFA53C;
+}
+
 /* Кнопки */
 .apply-button {
     display: block;
@@ -1302,7 +1335,7 @@ select {
 
 .logout-button {
     display: inline-block;
-    background: #ff6b6b;
+    background: #FFA53C;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -1311,5 +1344,5 @@ select {
 }
 
 .logout-button:hover {
-    background: #ff5252;
+    background: #fe8800;
 }
