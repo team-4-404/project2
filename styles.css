@@ -42,9 +42,9 @@ main {
     display: flex;
     align-items: center;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: bold;
-    color: #9BA2E4;
+    color: #000000;
 }
 
 a {
@@ -135,7 +135,7 @@ a {
 
 .catalog-container {
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 h1 {
@@ -165,8 +165,7 @@ select {
 .tabs {
     display: flex;
     align-items: center;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    border: 1px solid #D5D5D5;
     overflow: hidden;
 }
 
@@ -594,11 +593,11 @@ input[type="checkbox"]:hover {
 }
 
 .popular-products__nav {
-    position: absolute;
     bottom: 20px;
     right: 10%;
     display: flex;
     gap: 10px;
+    justify-content:center;
 }
 
 .popular-products__arrow {
@@ -839,6 +838,7 @@ input[type="checkbox"]:hover {
     justify-content: space-between;
     max-width: 1000px;
     margin: 0 auto;
+    flex-direction: column;
 }
 
 .footer__contacts, .footer__schedule, .footer__social {

@@ -2,15 +2,14 @@
 <header class="header">
     <div class="container">
         <div class="logo">
-            <a href="index.html">
-                <img src="img/logo.jpg" alt="Sweet Dreams">
-                Sweet Dreams
+            <a href="../index.php">
+                <span>404</span>
             </a>
         </div>
         <nav class="nav">
             <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="tovars.php">Каталог</a></li>
+                <li><a href="../index.php">Главная</a></li>
+                <li><a href="../tovars.php">Каталог</a></li>
             </ul>
         </nav>
         <div class="search-box">
@@ -30,7 +29,7 @@
                 </a>';
             }
             ?>
-            <a href="cart.html" class="cart">
+            <a href="cart.php" class="cart">
                 <img src="img/korzina.png" alt="Корзина">
                 <span class="cart-count">0</span>
             </a>

@@ -6,7 +6,7 @@
         <div class="footer__content">
             <div class="footer__section">
                 <h3>О нас</h3>
-                <p>Sweet Dreams - ваш надежный магазин качественных товаров</p>
+                <p>404 - ваш надежный магазин качественных товаров</p>
             </div>
             <div class="footer__section">
                 <h3>Контакты</h3>
@@ -29,7 +29,8 @@
         </div>
         <div class="footer__copyright">
             <hr>
-            <p>&copy; <?php echo date('Y'); ?> Sweet Dreams. Все права защищены.</p>
+            <p>&copy; <?php echo date('Y'); ?> 404. Все права защищены.</p>
         </div>
     </div>
 </footer>
+<script src="script.js" defer></script>
