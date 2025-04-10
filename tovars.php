@@ -15,6 +15,7 @@
     <h1>Каталог</h1>
 
     <!-- Вкладки + Выпадающий список + Конструктор -->
+    <form id="filter-form">
     <div class="tabs-container">
             <select id="sort-select">
                 <option value="popular">По популярности</option>
@@ -34,7 +35,6 @@
         
         <!-- Боковая панель с фильтрами -->
         <aside class="filters">
-            <form id="filter-form">
                 <!-- Цена -->
                 <div class="filter-section">
                     <h3>Цена</h3>
@@ -98,8 +98,7 @@
                     </label>
                 </div>
 
-                <!-- Кнопки -->
-                <button type="submit" class="apply-button">Применить</button>
+                <!-- Кнопка -->
                 <button type="reset" class="reset-button">Сбросить всё</button>
             </form>
         </aside>
