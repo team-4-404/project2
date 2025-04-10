@@ -13,8 +13,15 @@
 }
 
 body {
+    display: flex;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    flex-direction: column; 
+}
+
+main {
+    flex: 1; /* Растягивается, занимая всё свободное пространство */
 }
 
 .header {
@@ -161,7 +168,6 @@ select {
     border: 1px solid #ddd;
     border-radius: 5px;
     overflow: hidden;
-    gap: 15px;
 }
 
 .tabs-container {
@@ -351,9 +357,18 @@ input[type="checkbox"]:hover {
 }
 
 /* Контейнер товаров */
-.products-container {
-    flex: 1;
+.size-group h4 {
+    color: #FFA53C;
 }
+  
+.size-group label {
+    cursor: pointer;
+}
+  
+.size-group label:hover {
+    color: #FFA53C;
+}
+
 
 .products-container {
     display: flex;
@@ -374,7 +389,7 @@ input[type="checkbox"]:hover {
 .product-card {
     background: #fff;
     border-radius: 10px;
-    max-height: 400px;
+    max-height: 335px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
@@ -815,6 +830,7 @@ input[type="checkbox"]:hover {
     color: white;
     padding: 40px 0 20px;
     bottom: 0;
+    margin-top: auto;
     margin-top: 20px;
 }
 

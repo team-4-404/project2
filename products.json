@@ -3,12 +3,13 @@
         "id": "1",
         "name": "Детский комплект \"Совушки\"",
         "article": "0000000001",
+        "category": "komplekty",
         "price": "4000 ₽",
         "color": "#6fc7ff",
         "inStock": true,
         "image": "img/product1.png",
         "addedDate": "2025-03-05",
-        "size": "120x150",
+        "size": "1 СП",
         "rating": "4.9",
         "description": "Детский комплект \"Совушки\" создан для того, чтобы ваш ребенок чувствовал себя уютно и комфортно.",
         "specs": [
@@ -27,6 +28,7 @@
         "id": "2",
         "name": "Комплект \"Лесные мотивы\"",
         "article": "0000000002",
+        "category": "komplekty",
         "price": "3500 ₽",
         "color": "#8b4513",
         "addedDate": "2025-03-20",
@@ -51,6 +53,7 @@
         "id": "3",
         "name": "Комплект \"Розовый рай\"",
         "article": "0000000003",
+        "category": "komplekty",
         "price": "5000 ₽",
         "color": "#e5c29f",
         "addedDate": "2025-03-23",
@@ -75,6 +78,7 @@
         "id": "4",
         "name": "Комплект \"Зимняя сказка\"",
         "article": "0000000004",
+        "category": "komplekty",
         "price": "6000 ₽",
         "color": "#000000",
         "addedDate": "2025-02-05",
@@ -99,12 +103,13 @@
         "id": "5",
         "name": "Комплект \"Морские волны\"",
         "article": "0000000005",
+        "category": "komplekty",
         "price": "4200 ₽",
         "color": "#ffffff",
         "inStock": true,
         "image": "img/product5.png",
         "addedDate": "2025-01-15",
-        "size": "1,5 СП",
+        "size": "1 СП",
         "rating": "4.5",
         "description": "Комплект \"Морские волны\" создан для тех, кто мечтает о море и приключениях.",
         "specs": [
@@ -123,12 +128,13 @@
         "id": "6",
         "name": "Комплект \"Осенний Тигр\"",
         "article": "0000000006",
+        "category": "komplekty",
         "price": "4500 ₽",
         "color": "#8b4513",
         "addedDate": "2023-10-15",
         "inStock": true,
         "image": "img/product6.png",
-        "size": "120x150",
+        "size": "1 СП",
         "rating": "4.4",
         "description": "Комплект \"Осенний Тигр\" создан для тех, кто ценит яркие и насыщенные цвета осени.",
         "specs": [
@@ -147,12 +153,13 @@
         "id": "7",
         "name": "Комплект \"Звездная ночь\"",
         "article": "0000000007",
+        "category": "komplekty",
         "price": "4700 ₽",
         "color": "#6fc7ff",
         "addedDate": "2024-12-15",
         "inStock": true,
         "image": "img/product7.png",
-        "size": "1,5 СП",
+        "size": "1 СП",
         "rating": "4.8",
         "description": "Комплект с принтом звездного неба создаст атмосферу уюта и романтики в вашей спальне.",
         "specs": [
@@ -171,12 +178,13 @@
         "id": "8",
         "name": "Детский комплект \"Динозаврики\"",
         "article": "0000000008",
+        "category": "komplekty",
         "price": "3800 ₽",
         "color": "#6fc7ff",
         "addedDate": "2024-03-15",
         "inStock": true,
         "image": "img/product8.png",
-        "size": "120x150",
+        "size": "1 СП",
         "rating": "4.9",
         "description": "Яркий комплект с веселыми динозаврами порадует вашего ребенка и сделает сны интереснее.",
         "specs": [
@@ -195,6 +203,7 @@
         "id": "9",
         "name": "Комплект \"Лавандовые поля\"",
         "article": "0000000009",
+        "category": "komplekty",
         "price": "5200 ₽",
         "color": "#6fc7ff",
         "addedDate": "2025-03-20",
@@ -219,6 +228,7 @@
         "id": "10",
         "name": "Комплект \"Городские огни\"",
         "article": "0000000010",
+        "category": "komplekty",
         "price": "5500 ₽",
         "color": "#6fc7ff",
         "addedDate": "2025-03-05",
@@ -243,6 +253,7 @@
         "id": "11",
         "name": "Комплект \"Тропический рай\"",
         "article": "0000000011",
+        "category": "komplekty",
         "price": "4800 ₽",
         "addedDate": "2025-02-15",
         "color": "#6fc7ff",
@@ -267,12 +278,13 @@
         "id": "12",
         "name": "Комплект \"Минимализм\"",
         "article": "0000000012",
+        "category": "komplekty",
         "price": "4300 ₽",
         "color": "#6fc7ff",
         "inStock": false,
         "addedDate": "2025-03-15",
         "image": "img/product12.png",
-        "size": "1,5 СП",
+        "size": "1 СП",
         "rating": "4.8",
         "description": "Сдержанный дизайн в серых тонах идеально впишется в современный интерьер.",
         "specs": [
@@ -285,6 +297,352 @@
             "img/product12_1.png",
             "img/product12_2.png",
             "img/product12_3.png"
+        ]
+    },
+    {
+        "id": "13",
+        "name": "Простыня \"Нежная\"",
+        "article": "0000000013",
+        "category": "prostyni",
+        "price": "1500 ₽",
+        "color": "#ffffff",
+        "inStock": true,
+        "image": "img/prostyni1.png",
+        "addedDate": "2025-03-10",
+        "size": "200x220",
+        "rating": "4.7",
+        "description": "Мягкая простыня из натурального хлопка для комфортного сна.",
+        "specs": [
+            "Материал: 100% хлопок",
+            "Размер: 200x220 см",
+            "Плотность: 120 г/м²"
+        ],
+        "images": [
+            "img/prostyni1.png",
+            "img/prostyni1.png",
+            "img/prostyni1.png"
+        ]
+    },
+    {
+        "id": "14",
+        "name": "Простыня \"ЭкоЛен\"",
+        "article": "0000000014",
+        "category": "prostyni",
+        "price": "1800 ₽",
+        "color": "#e5c29f",
+        "inStock": true,
+        "image": "img/prostyni2.png",
+        "addedDate": "2025-02-15",
+        "size": "200x220",
+        "rating": "4.8",
+        "description": "Экологичная простыня из льна с антибактериальными свойствами.",
+        "specs": [
+            "Материал: 100% лен",
+            "Размер: 240x260 см",
+            "Плотность: 150 г/м²"
+        ],
+        "images": [
+            "img/prostyni2.png",
+            "img/prostyni2.png"
+        ]
+    },
+    {
+        "id": "15",
+        "name": "Простыня на резинке \"Универсал\"",
+        "article": "0000000015",
+        "category": "prostyni",
+        "price": "2200 ₽",
+        "color": "#9acd32",
+        "inStock": true,
+        "image": "img/prostyni3.png",
+        "addedDate": "2025-01-20",
+        "size": "160x200",
+        "rating": "4.9",
+        "description": "Простыня на резинке идеально подходит для матрасов толщиной до 30 см.",
+        "specs": [
+            "Материал: 100% хлопок",
+            "Размер: 160x200 см",
+            "Резинка по всему периметру"
+        ],
+        "images": [
+            "img/prostyni3.png",
+            "img/prostyni3.png",
+            "img/prostyni3.png"
+        ]
+    },
+    {
+        "id": "16",
+        "name": "Простыня \"Сатин Премиум\"",
+        "article": "0000000016",
+        "category": "prostyni",
+        "price": "2500 ₽",
+        "color": "#f08080",
+        "inStock": false,
+        "image": "img/prostyni4.png",
+        "addedDate": "2025-03-01",
+        "size": "200x220",
+        "rating": "4.6",
+        "description": "Роскошная сатиновая простыня с шелковистой поверхностью.",
+        "specs": [
+            "Материал: 100% хлопок сатин",
+            "Размер: 220x240 см",
+            "Плотность: 180 г/м²"
+        ],
+        "images": [
+            "img/prostyni4.png",
+            "img/prostyni4.png"
+        ]
+    },
+    {
+        "id": "17",
+        "name": "Простыня \"Бамбуковая\"",
+        "article": "0000000017",
+        "category": "prostyni",
+        "price": "2800 ₽",
+        "color": "#6fc7ff",
+        "inStock": true,
+        "image": "img/prostyni5.png",
+        "addedDate": "2025-02-28",
+        "size": "180x200",
+        "rating": "4.7",
+        "description": "Дышащая простыня из бамбукового волокна с антибактериальным эффектом.",
+        "specs": [
+            "Материал: 100% бамбуковое волокно",
+            "Размер: 180x200 см",
+            "Гипоаллергенная"
+        ],
+        "images": [
+            "img/prostyni5.png",
+            "img/prostyni5.png"
+        ]
+    },
+    {
+        "id": "18",
+        "name": "Пододеяльник \"Классик\"",
+        "article": "0000000018",
+        "category": "pododeyalniki",
+        "price": "2000 ₽",
+        "color": "#ffffff",
+        "inStock": true,
+        "image": "img/pododey1.png",
+        "addedDate": "2025-03-05",
+        "size": "145x215",
+        "rating": "4.8",
+        "description": "Классический пододеяльник из натурального хлопка.",
+        "specs": [
+            "Материал: 100% хлопок",
+            "Размер: 145x215 см",
+            "Плотность: 130 г/м²"
+        ],
+        "images": [
+            "img/pododey1.png",
+            "img/pododey1.png"
+        ]
+    },
+    {
+        "id": "19",
+        "name": "Пододеяльник \"Евро\"",
+        "article": "0000000019",
+        "category": "pododeyalniki",
+        "price": "2300 ₽",
+        "color": "#8b4513",
+        "inStock": true,
+        "image": "img/pododey2.png",
+        "addedDate": "2025-02-10",
+        "size": "160x210",
+        "rating": "4.7",
+        "description": "Пододеяльник евро размера с внутренними завязками.",
+        "specs": [
+            "Материал: 100% хлопок",
+            "Размер: 175x215 см",
+            "Внутренние завязки"
+        ],
+        "images": [
+            "img/pododey2.png",
+            "img/pododey2.png"
+        ]
+    },
+    {
+        "id": "20",
+        "name": "Пододеяльник \"Сатин Люкс\"",
+        "article": "0000000020",
+        "category": "pododeyalniki",
+        "price": "3200 ₽",
+        "color": "#000000",
+        "inStock": true,
+        "image": "img/pododey3.png",
+        "addedDate": "2025-01-15",
+        "size": "155x215",
+        "rating": "4.9",
+        "description": "Роскошный пододеяльник из сатина с шелковистой поверхностью.",
+        "specs": [
+            "Материал: 100% хлопок сатин",
+            "Размер: 155x215 см",
+            "Плотность: 160 г/м²"
+        ],
+        "images": [
+            "img/pododey3.png",
+            "img/pododey3.png"
+        ]
+    },
+    {
+        "id": "21",
+        "name": "Пододеяльник \"Детский\"",
+        "article": "0000000021",
+        "category": "pododeyalniki",
+        "price": "1800 ₽",
+        "color": "#6fc7ff",
+        "inStock": false,
+        "image": "img/pododey4.png",
+        "addedDate": "2025-03-12",
+        "size": "160x210",
+        "rating": "4.6",
+        "description": "Яркий детский пододеяльник с веселым принтом.",
+        "specs": [
+            "Материал: 100% хлопок",
+            "Размер: 110x140 см",
+            "Гипоаллергенный"
+        ],
+        "images": [
+            "img/pododey4.png",
+            "img/pododey4.png"
+        ]
+    },
+    {
+        "id": "22",
+        "name": "Пододеяльник \"Бамбуковый\"",
+        "article": "0000000022",
+        "category": "pododeyalniki",
+        "price": "3500 ₽",
+        "color": "#9acd32",
+        "inStock": true,
+        "image": "img/pododey5.png",
+        "addedDate": "2025-02-20",
+        "size": "160x210",
+        "rating": "4.8",
+        "description": "Экологичный пододеяльник из бамбукового волокна.",
+        "specs": [
+            "Материал: 100% бамбуковое волокно",
+            "Размер: 160x210 см",
+            "Антибактериальный эффект"
+        ],
+        "images": [
+            "img/pododey5.png",
+            "img/pododey5.png"
+        ]
+    },
+    {
+        "id": "23",
+        "name": "Наволочка стандартная",
+        "article": "0000000023",
+        "category": "navolochki",
+        "price": "800 ₽",
+        "color": "#ffffff",
+        "inStock": true,
+        "image": "img/navol1.png",
+        "addedDate": "2025-03-08",
+        "size": "50x70",
+        "rating": "4.7",
+        "description": "Классическая наволочка из натурального хлопка.",
+        "specs": [
+            "Материал: 100% хлопок",
+            "Размер: 50x70 см",
+            "Плотность: 120 г/м²"
+        ],
+        "images": [
+            "img/navol1.png"
+        ]
+    },
+    {
+        "id": "24",
+        "name": "Наволочка евро",
+        "article": "0000000024",
+        "category": "navolochki",
+        "price": "1200 ₽",
+        "color": "#f08080",
+        "inStock": true,
+        "image": "img/navol2.png",
+        "addedDate": "2025-02-18",
+        "size": "50x70",
+        "rating": "4.8",
+        "description": "Наволочка евро размера с застежкой на пуговицу.",
+        "specs": [
+            "Материал: 100% хлопок",
+            "Размер: 70x70 см",
+            "Застежка на пуговицу"
+        ],
+        "images": [
+            "img/navol2.png",
+            "img/navol2.png"
+        ]
+    },
+    {
+        "id": "25",
+        "name": "Наволочка сатиновая",
+        "article": "0000000025",
+        "category": "navolochki",
+        "price": "1500 ₽",
+        "color": "#000000",
+        "inStock": true,
+        "image": "img/navol3.png",
+        "addedDate": "2025-01-25",
+        "size": "50x70",
+        "rating": "4.9",
+        "description": "Роскошная сатиновая наволочка с шелковистой поверхностью.",
+        "specs": [
+            "Материал: 100% хлопок сатин",
+            "Размер: 50x70 см",
+            "Плотность: 160 г/м²"
+        ],
+        "images": [
+            "img/navol3.png",
+            "img/navol3.png"
+        ]
+    },
+    {
+        "id": "26",
+        "name": "Наволочка детская",
+        "article": "0000000026",
+        "category": "navolochki",
+        "price": "900 ₽",
+        "color": "#6fc7ff",
+        "inStock": false,
+        "image": "img/navol4.png",
+        "addedDate": "2025-03-15",
+        "size": "40x60",
+        "rating": "4.6",
+        "description": "Яркая детская наволочка с веселым принтом.",
+        "specs": [
+            "Материал: 100% хлопок",
+            "Размер: 40x60 см",
+            "Гипоаллергенная"
+        ],
+        "images": [
+            "img/navol4.png",
+            "img/navol4.png"
+        ]
+    },
+    {
+        "id": "27",
+        "name": "Наволочка бамбуковая",
+        "article": "0000000027",
+        "category": "navolochki",
+        "price": "1800 ₽",
+        "color": "#9acd32",
+        "inStock": true,
+        "image": "img/navol5.png",
+        "addedDate": "2025-02-28",
+        "size": "50x70",
+        "rating": "4.7",
+        "description": "Экологичная наволочка из бамбукового волокна.",
+        "specs": [
+            "Материал: 100% бамбуковое волокно",
+            "Размер: 50x70 см",
+            "Антибактериальный эффект"
+        ],
+        "images": [
+            "img/navol5.png",
+            "img/navol5.png"
         ]
     }
 ]

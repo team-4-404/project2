@@ -29,8 +29,8 @@
     
             <!-- Поиск -->
             <div class="search-box">
-                <input type="text" placeholder="Введите категорию или товар">
-                <button type="submit">🔍</button>
+                <input type="text" placeholder="Введите категорию или товар" id="search-input">
+                <button type="submit" id="search-button">🔍</button>
             </div>
     
             <!-- Иконки пользователя и корзины -->
@@ -51,21 +51,22 @@
 
     <!-- Вкладки + Выпадающий список + Конструктор -->
     <div class="tabs-container">
-            <select id="sort-select" class="sort-dropdown">
-                <option value="popular">Самые популярные</option>
+            <select id="sort-select">
+                <option value="popular">По популярности</option>
                 <option value="cheap">Сначала дешевые</option>
                 <option value="expensive">Сначала дорогие</option>
                 <option value="new">Новинки</option>
             </select>
-        <div class="tabs">
-            <button class="tab active" onclick="changeCategory('komplekty')">Комплекты</button>
-            <button class="tab" onclick="changeCategory('prostyni')">Простыни</button>
-            <button class="tab" onclick="changeCategory('pododeyalniki')">Пододеяльники</button>
-            <button class="tab" onclick="changeCategory('navolochki')">Наволочки</button>
-        </div>
+            <div class="tabs">
+                <button class="tab" onclick="changeCategory('komplekty', this)">Комплекты</button>
+                <button class="tab" onclick="changeCategory('prostyni', this)">Простыни</button>
+                <button class="tab" onclick="changeCategory('pododeyalniki', this)">Пододеяльники</button>
+                <button class="tab" onclick="changeCategory('navolochki', this)">Наволочки</button>
+            </div>
     </div>
 
     <div class="catalog-layout">
+        
         <!-- Боковая панель с фильтрами -->
         <aside class="filters">
             <form id="filter-form">
@@ -79,14 +80,36 @@
                 </div>
 
                 <!-- Размер -->
-                <div class="filter-section">
+                <div class="filter-section size-filter">
                     <h3>Размер</h3>
-                    <label><input type="checkbox"> 1 СП</label>
-                    <label><input type="checkbox"> 1,5 СП</label>
-                    <label><input type="checkbox"> 2 СП</label>
-                    <label><input type="checkbox"> ЕВРО</label>
-                    <label><input type="checkbox"> 120x150</label>
-                </div>
+                    <div class="size-group">
+                        <h4>Комплекты</h4>
+                        <label><input type="checkbox" name="size" value="1 СП"> 1 СП</label>
+                        <label><input type="checkbox" name="size" value="2 СП"> 2 СП</label>
+                        <label><input type="checkbox" name="size" value="ЕВРО"> ЕВРО</label>
+                        </div>
+
+                        <div class="size-group">
+                        <h4>Простыни</h4>
+                        <label><input type="checkbox" name="size" value="200x220"> 200x220 см</label>
+                        <label><input type="checkbox" name="size" value="160x200"> 160x200 см</label>
+                        <label><input type="checkbox" name="size" value="180x200"> 180x200 см</label>
+                        </div>
+
+                        <div class="size-group">
+                        <h4>Пододеяльники</h4>
+                        <label><input type="checkbox" name="size" value="145x215"> 145x215 см</label>
+                        <label><input type="checkbox" name="size" value="155x215"> 155x215 см</label>
+                        <label><input type="checkbox" name="size" value="160x210"> 160x210 см</label>
+                        </div>
+
+                        <div class="size-group">
+                        <h4>Наволочки</h4>
+                        <label><input type="checkbox" name="size" value="50x70"> 50x70 см</label>
+                        <label><input type="checkbox" name="size" value="40x60"> 40x60 см</label>
+                        </div>
+                    </div>
+                
 
                 <!-- Цвет -->
                 <div class="filter-section">
@@ -119,9 +142,6 @@
         <div class="products-container" id="product-list">
             <!-- Здесь будут подгружаться товары -->
         </div>
-
-        
-
     </div>
         <!-- Добавляем пагинацию -->
         <div class="pagination" id="pagination">
